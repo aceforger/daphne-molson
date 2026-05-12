@@ -4,16 +4,20 @@
   --font-display: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
   
-  /* White & Pink Theme */
-  --color-primary: #d4527a;
-  --color-primary-dark: #b83b61;
-  --color-primary-light: #e87a9e;
-  --color-secondary: #ffb6c1;
-  --color-accent: #ff69b4;
-  --color-accent-light: #ff99cc;
-  --color-dark: #2d1b2e;
-  --color-light: #fff5f8;
-  --color-rose: #fbc4d5;
+  /* Fuchsia Pink Theme for Daphne Molson */
+  --color-primary: #D81B60;
+  --color-primary-dark: #AD1457;
+  --color-primary-light: #F06292;
+  --color-secondary: #FF80AB;
+  --color-secondary-dark: #F48FB1;
+  --color-secondary-light: #FFB7C5;
+  --color-accent: #FF4081;
+  --color-accent-light: #FF80AB;
+  --color-accent-dark: #C2185B;
+  --color-dark: #4A0024;
+  --color-light: #FFF5F8;
+  --color-fuchsia-bg: #FCE4EC;
+  --color-gold: #FFD700;
 }
 
 @layer base {
@@ -42,6 +46,12 @@
            transform hover:-translate-y-0.5;
   }
   
+  .btn-secondary {
+    @apply bg-secondary text-primary-dark px-8 py-3 rounded-full font-semibold 
+           transition-all duration-300 hover:bg-secondary-dark hover:shadow-lg 
+           transform hover:-translate-y-0.5;
+  }
+  
   .btn-outline {
     @apply border-2 border-primary text-primary px-8 py-3 rounded-full 
            font-semibold transition-all duration-300 hover:bg-primary 
@@ -53,6 +63,6 @@
   }
   
   .section-subtitle {
-    @apply text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12;
+    @apply text-lg text-dark/60 text-center max-w-3xl mx-auto mb-12;
   }
 }
